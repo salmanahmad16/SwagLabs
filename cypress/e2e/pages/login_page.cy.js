@@ -9,34 +9,34 @@ class Login {
 
 
     setUserName(username){
-        cy.get(this.input_username).type(username);
+        cy.get(this.input_username).type(username)
 
     }
 
     setPassword(password){
-        cy.get(this.input_password).type(password);
+        cy.get(this.input_password).type(password)
     }
 
     clickLogin(){
-        cy.get(this.login_button).click();
+        cy.get(this.login_button).click()
     }
 
     verifyLogin(){
-        cy.get(this.products_heading).should("have.text", "Products");
+        cy.get(this.products_heading).should("have.text", "Products")
     }
 
     verifyErrorMsgWrongCredent(){
-        cy.get(this.error_msg).should("have.text", "Epic sadface: Username and password do not match any user in this service");
+        cy.get(this.error_msg).should("have.text", "Epic sadface: Username and password do not match any user in this service")
 
     }
 
     verifyErrorMsgNoPassword(){
-        cy.get(this.error_msg).should("have.text", "Epic sadface: Password is required");
+        cy.get(this.error_msg).should("have.text", "Epic sadface: Password is required")
 
     }
 
     verifyErrorMsgNoUserName(){
-        cy.get(this.error_msg).should("have.text", "Epic sadface: Username is required");
+        cy.get(this.error_msg).should("have.text", "Epic sadface: Username is required")
 
     }
 
