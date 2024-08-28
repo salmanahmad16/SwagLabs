@@ -34,7 +34,7 @@ describe("Login Test Suit", () => {
     })
 
     it("Verify login error message without password", () =>{
-        login.setUserName('khan');
+        // login.setUserName('khan');
         login.clickLogin();
         login.verifyErrorMsgNoPassword();
 
